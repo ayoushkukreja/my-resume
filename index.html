@@ -1,0 +1,708 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Resume | Ayoush Kishor</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #e8eef3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .resume {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background: white;
+            box-shadow: 0 5px 20px #aaa;
+        }
+
+        .header {
+            background: #751717;
+            color: white;
+            padding: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-pic {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: #470e7c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .header h1 {
+            font-size: 36px;
+        }
+
+        .header h3 {
+            color: #9bd3f5;
+        }
+
+        .header p {
+            color: #e5e5e5;
+        }
+
+        .contact {
+            text-align: right;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 30% 70%;
+        }
+
+        aside {
+            background: #f4f7f9;
+            padding: 25px;
+        }
+
+        main {
+            padding: 25px;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #19324d;
+            border-bottom: 3px solid #4aa3df;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #19324d;
+        }
+
+        .item {
+            border-left: 4px solid #4aa3df;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        .date {
+            color: #3988b8;
+            font-weight: bold;
+        }
+
+        .skill {
+            margin-bottom: 15px;
+        }
+
+        .skill span {
+            font-weight: bold;
+        }
+
+        .bar {
+            width: 100%;
+            height: 8px;
+            background: #ddd;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+
+        .bar div {
+            height: 100%;
+            background: #4aa3df;
+            border-radius: 10px;
+        }
+
+        .css {
+            width: 85%;
+        }
+
+        .javascript {
+            width: 70%;
+        }
+
+        .python {
+            width: 75%;
+        }
+
+        .mongodb {
+            width: 70%;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .project {
+            background: #f4f7f9;
+            padding: 18px;
+            border-top: 4px solid #4aa3df;
+        }
+
+        .project h3 {
+            margin-bottom: 8px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 7px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tags span {
+            background: #19324d;
+            color: white;
+            padding: 6px 10px;
+            border-radius: 15px;
+            font-size: 13px;
+        }
+
+        .goal {
+            background: #eef7fb;
+            padding: 20px;
+        }
+
+        footer {
+            background: #19324d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 800px) {
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile {
+                flex-direction: column;
+            }
+
+            .contact {
+                text-align: center;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .header {
+                padding: 25px 15px;
+            }
+
+            aside,
+            main {
+                padding: 20px;
+            }
+
+            .resume {
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="resume">
+
+    <header class="header">
+
+        <div class="profile">
+
+            <div class="profile-pic">
+                AK
+            </div>
+
+            <div>
+
+                <h1>Ayoush Kishor</h1>
+
+                <h3>
+                    BS Computer Science Student | Web Developer
+                </h3>
+
+                <p>
+                    Interested in programming, web development
+                    and learning new technologies.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact">
+
+            <p>Email: ayoush@example.com</p>
+
+            <p>Phone: +92 300 1234567</p>
+
+            <p>Location: Pakistan</p>
+
+            <p>GitHub: github.com/ayoush</p>
+
+            <p>LinkedIn: linkedin.com/in/ayoush</p>
+
+        </div>
+
+    </header>
+
+
+    <div class="content">
+
+
+        <aside>
+
+            <section>
+
+                <h2>Profile</h2>
+
+                <p>
+                    I am a Computer Science student interested
+                    in programming, web development and technology.
+                    I enjoy learning new things and creating
+                    small projects for practice.
+                </p>
+
+            </section>
+
+
+            <section>
+
+                <h2>Career Objective</h2>
+
+                <p>
+                    My goal is to improve my technical skills,
+                    gain practical experience and become a
+                    skilled software developer.
+                </p>
+
+            </section>
+
+
+            <section>
+
+                <h2>Skills</h2>
+
+                <div class="skill">
+
+                    <span>CSS</span>
+
+                    <div class="bar">
+                        <div class="css"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <span>JavaScript</span>
+
+                    <div class="bar">
+                        <div class="javascript"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <span>Python</span>
+
+                    <div class="bar">
+                        <div class="python"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <span>MongoDB</span>
+
+                    <div class="bar">
+                        <div class="mongodb"></div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section>
+
+                <h2>Technical Skills</h2>
+
+                <p>Web Development</p>
+
+                <p>Database Management</p>
+
+                <p>Programming</p>
+
+                <p>Git & GitHub</p>
+
+                <p>Responsive Design</p>
+
+            </section>
+
+
+            <section>
+
+                <h2>Soft Skills</h2>
+
+                <div class="tags">
+
+                    <span>Communication</span>
+
+                    <span>Teamwork</span>
+
+                    <span>Problem Solving</span>
+
+                    <span>Time Management</span>
+
+                    <span>Leadership</span>
+
+                </div>
+
+            </section>
+
+
+            <section>
+
+                <h2>Languages</h2>
+
+                <p>English</p>
+
+                <p>Urdu</p>
+
+                <p>Hindi</p>
+
+            </section>
+
+        </aside>
+
+
+        <main>
+
+
+            <section>
+
+                <h2>Education</h2>
+
+
+                <div class="item">
+
+                    <h3>BS Computer Science</h3>
+
+                    <p class="date">
+                        2024 - Present
+                    </p>
+
+                    <p>
+                        Currently studying Computer Science
+                        with focus on programming, databases,
+                        web development and software engineering.
+                    </p>
+
+                </div>
+
+
+                <div class="item">
+
+                    <h3>Intermediate - Pre-Medical</h3>
+
+                    <p class="date">
+                        2022 - 2024
+                    </p>
+
+                    <p>
+                        Completed Intermediate education in
+                        the Pre-Medical group. Later developed
+                        an interest in computers and shifted
+                        to Computer Science.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <section>
+
+                <h2>Relevant Coursework</h2>
+
+                <ul>
+
+                    <li>Programming Fundamentals</li>
+
+                    <li>Database Systems</li>
+
+                    <li>Web Development</li>
+
+                    <li>Computer Organization</li>
+
+                    <li>Operating Systems</li>
+
+                    <li>Software Engineering</li>
+
+                </ul>
+
+            </section>
+
+
+            <section>
+
+                <h2>Experience</h2>
+
+
+                <div class="item">
+
+                    <h3>Web Development Intern</h3>
+
+                    <p class="date">
+                        2026
+                    </p>
+
+                    <p>
+                        Worked on responsive websites and
+                        web applications using CSS and
+                        JavaScript.
+                    </p>
+
+                </div>
+
+
+                <div class="item">
+
+                    <h3>Student Developer</h3>
+
+                    <p class="date">
+                        2025 - Present
+                    </p>
+
+                    <p>
+                        Developed university projects and
+                        practiced programming, database
+                        management and application development.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <section>
+
+                <h2>Projects</h2>
+
+
+                <div class="projects">
+
+
+                    <div class="project">
+
+                        <h3>Portfolio Website</h3>
+
+                        <p>
+                            A responsive personal portfolio
+                            website created using CSS and
+                            JavaScript.
+                        </p>
+
+                    </div>
+
+
+                    <div class="project">
+
+                        <h3>To-Do List App</h3>
+
+                        <p>
+                            A task management website with
+                            add, edit, delete, search and
+                            priority features.
+                        </p>
+
+                    </div>
+
+
+                    <div class="project">
+
+                        <h3>Online Examination System</h3>
+
+                        <p>
+                            A database-based system for
+                            managing students, exams,
+                            questions and results.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section>
+
+                <h2>Career Interests</h2>
+
+                <div class="tags">
+
+                    <span>Web Development</span>
+
+                    <span>Software Development</span>
+
+                    <span>Database Development</span>
+
+                    <span>UI Design</span>
+
+                    <span>Application Development</span>
+
+                </div>
+
+            </section>
+
+
+            <section>
+
+                <h2>Workshops & Seminars</h2>
+
+                <ul>
+
+                    <li>Web Development Workshop</li>
+
+                    <li>Database Management Seminar</li>
+
+                    <li>Programming and Software Development Seminar</li>
+
+                </ul>
+
+            </section>
+
+
+            <section>
+
+                <h2>Achievements</h2>
+
+                <ul class="achievements">
+
+                    <li>
+                        Completed multiple web development projects.
+                    </li>
+
+                    <li>
+                        Developed database-based academic projects.
+                    </li>
+
+                    <li>
+                        Completed a web development internship.
+                    </li>
+
+                    <li>
+                        Gained practical experience through university work.
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <section class="goal">
+
+                <h2>Professional Goals</h2>
+
+                <p>
+                    I want to become a skilled software developer.
+                    I want to keep learning new technologies,
+                    improve my programming skills and build
+                    useful real-world applications.
+                </p>
+
+            </section>
+
+
+            <section>
+
+                <h2>References</h2>
+
+                <p>
+                    References are available upon request.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            © 2026 Ayoush Kishor | Student Resume
+        </p>
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
+```
